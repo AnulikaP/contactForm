@@ -15,8 +15,8 @@ const Validation = (form) => {
      errors.email = 'Email is Required';
   }
   else if(!email_pattern.test(form.email)) {
-    errors.email = 'Email is Invalid';
-  }
+    errors.email = 'Email is Invalid'
+  };
   if(form.message === '') {
     errors.message = 'Message is Required';
   }

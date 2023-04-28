@@ -32,8 +32,12 @@ const [errors, setErrors] = useState({});
 
         setErrors(Validation(form));
 
-        alert('Submission Received')
-        
+        if(form.name === '') {
+          alert('INVALID, submission failed') 
+        }else  {
+            alert('Submission Received')
+        } 
+
 
      //Reset
         setForm(INITIAL_STATE);
